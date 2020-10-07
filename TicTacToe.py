@@ -120,5 +120,3 @@ def playerMove(table, char=None):
     print('=' * 20)
 
     return move
-
-main()
