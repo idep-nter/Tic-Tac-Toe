@@ -1,4 +1,4 @@
-Classic game we all know. 
+The classic game we all know. 
 
 Each player places his mark ('x' or 'o') on 3x3 grid.
 
