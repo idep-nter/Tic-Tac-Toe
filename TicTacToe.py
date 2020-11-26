@@ -1,8 +1,8 @@
 def main():
     """
-    Main function prints an intro of the game at the start and creates and
+    The main function prints an intro of the game at the start and creates and
     prints an empty table after that.
-    In the while loop players are making moves, switching and using constantly
+    In a while loop players are making moves, switching and using the constantly
     updated table until any of winning or tie conditions are met.
     """
     intro()
@@ -47,7 +47,7 @@ Let's start the game!
 def makeTable(move=None, char=None, pTable=None):
     """
     It loads the previous table if it exists or creates one as a dictionary if not.
-    If there is a move as an argument it sets a player's mark to a
+    If there is a move as an argument it sets the player's mark to a
     given position in the dictionary and returns the current table.
     """
     if pTable:
@@ -91,7 +91,7 @@ def checkIfOver(table, char=None):
 
 def checkIfTie(table):
     """
-    Iterates through the table's values and returns True if there is no blank
+    Iterates through table's values and returns True if there is no blank
     space on the table.
     """
     for value in table.values():
@@ -103,8 +103,8 @@ def checkIfTie(table):
 
 def playerMove(table, char=None):
     """
-    Asks player for a move and returns it after it checks if it's a single
-    digit and if position on the table is available.
+    Asks the player for a move and returns it after it checks if it's a single
+    digit and if a position on the table is available.
     """
     print('='*20)
     while True:
