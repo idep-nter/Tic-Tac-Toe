@@ -19,7 +19,6 @@ def main():
         if checkIfTie(table):
             print('It\'s a tie!')
             break
-
         player = 'x'
         move = playerMove(table, char=player)
         table = makeTable(move, char=player, pTable=table)
@@ -88,7 +87,6 @@ def checkIfOver(table, char=None):
 
     return False
 
-
 def checkIfTie(table):
     """
     Iterates through table's values and returns True if there is no blank
@@ -99,7 +97,6 @@ def checkIfTie(table):
             return False
 
     return True
-
 
 def playerMove(table, char=None):
     """
@@ -116,7 +113,10 @@ def playerMove(table, char=None):
             print('You can\'t move there!')
             continue
         break
+        
     print('=' * 20)
     print('=' * 20)
-
     return move
+
+if _name_ == '_name_':
+    main()
