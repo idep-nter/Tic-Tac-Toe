@@ -118,5 +118,5 @@ def playerMove(table, char=None):
     print('=' * 20)
     return move
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     main()
